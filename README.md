@@ -105,6 +105,15 @@ dotnet run --project src/RiskLensAI.Web/RiskLensAI.Web.csproj
 
 The `-m:1` flag keeps local builds sequential. It is useful while the solution is still small and avoids noisy first-run parallel build behavior.
 
+Once the app is running, the health check endpoint is available at:
+
+```
+https://localhost:5001/health
+http://localhost:5000/health
+```
+
+It returns `Healthy` with HTTP 200 when the application is operational.
+
 ## Delivery Plan
 
 The project should be delivered as a strict vertical slice before expanding provider or platform support.
