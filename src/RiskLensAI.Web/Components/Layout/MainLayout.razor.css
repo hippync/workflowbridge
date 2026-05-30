@@ -1,0 +1,53 @@
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+}
+
+.sidebar {
+    border-right: 1px solid #d7dde5;
+    background: #f6f8fb;
+}
+
+main {
+    min-width: 0;
+}
+
+.content {
+    max-width: 72rem;
+    padding: 2rem;
+}
+
+#blazor-error-ui {
+    background: #fff8d6;
+    border-top: 1px solid #e2cf74;
+    bottom: 0;
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.75rem 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+}
+
+@media (max-width: 720px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-bottom: 1px solid #d7dde5;
+        border-right: 0;
+    }
+
+    .content {
+        padding: 1.25rem;
+    }
+}

@@ -1,0 +1,30 @@
+.brand {
+    padding: 1.5rem 1.25rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.brand a {
+    color: #172033;
+    text-decoration: none;
+}
+
+.nav {
+    display: grid;
+    gap: 0.25rem;
+    padding: 0 0.75rem 1rem;
+}
+
+.nav-link {
+    border-radius: 6px;
+    color: #344054;
+    display: block;
+    padding: 0.65rem 0.75rem;
+    text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background: #e8eef6;
+    color: #101828;
+}

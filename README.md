@@ -2,7 +2,7 @@
 
 > AI-assisted credit risk workflow built with .NET, Blazor Server, auditable AI providers, document ingestion, and a portfolio-ready architecture.
 
-Active planning phase. The previous Stripe/Notion/Slack automation scope has been replaced by a .NET enterprise AI integration project.
+Active development phase. The previous Stripe/Notion/Slack automation scope has been replaced by a .NET enterprise AI integration project.
 
 ## Product Intent
 
@@ -71,7 +71,7 @@ See [docs/architecture.md](docs/architecture.md) for the current design plan.
 
 ## Initial Technical Stack
 
-- .NET 10 target, or latest stable installed SDK if .NET 10 is unavailable locally.
+- .NET 10.
 - ASP.NET Core and Blazor Server.
 - EF Core and PostgreSQL.
 - Serilog.
@@ -85,6 +85,25 @@ See [docs/architecture.md](docs/architecture.md) for the current design plan.
 - Optional Microsoft.Extensions.AI adapter once the core provider boundary is stable.
 
 See [docs/technology-stack.md](docs/technology-stack.md) for the detailed technology plan.
+
+## Local Development
+
+Prerequisite:
+
+- .NET SDK 10.0.300 or compatible .NET 10 SDK.
+
+This repository includes `global.json` to pin the SDK feature band.
+
+Common commands:
+
+```bash
+dotnet restore RiskLensAI.sln
+dotnet build RiskLensAI.sln --no-restore -m:1
+dotnet test RiskLensAI.sln --no-build -m:1
+dotnet run --project src/RiskLensAI.Web/RiskLensAI.Web.csproj
+```
+
+The `-m:1` flag keeps local builds sequential. It is useful while the solution is still small and avoids noisy first-run parallel build behavior.
 
 ## Delivery Plan
 
