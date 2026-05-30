@@ -2,7 +2,7 @@
 
 ## Goal
 
-Design WorkflowBridge as a small but credible enterprise .NET application that proves AI can be integrated safely into a business workflow.
+Design RiskLensAI as a small but credible enterprise .NET application that proves AI can be integrated safely into a business workflow.
 
 The architecture should optimize for:
 
@@ -16,20 +16,20 @@ The architecture should optimize for:
 ## Proposed Solution Structure
 
 ```text
-WorkflowBridge.sln
+RiskLensAI.sln
 src/
-  WorkflowBridge.Domain/
-  WorkflowBridge.Application/
-  WorkflowBridge.Infrastructure/
-  WorkflowBridge.Web/
+  RiskLensAI.Domain/
+  RiskLensAI.Application/
+  RiskLensAI.Infrastructure/
+  RiskLensAI.Web/
 tests/
-  WorkflowBridge.Application.Tests/
-  WorkflowBridge.Infrastructure.Tests/
+  RiskLensAI.Application.Tests/
+  RiskLensAI.Infrastructure.Tests/
 ```
 
 ## Project Responsibilities
 
-### WorkflowBridge.Domain
+### RiskLensAI.Domain
 
 Contains enterprise concepts with no infrastructure dependencies.
 
@@ -42,7 +42,7 @@ Initial candidates:
 - `AiAuditRecord`
 - value objects and enums for case status, risk rating, provider type, and document type
 
-### WorkflowBridge.Application
+### RiskLensAI.Application
 
 Contains use cases, interfaces, validators, DTOs, and orchestration.
 
@@ -58,7 +58,7 @@ Initial candidates:
 - `IAuditLogger`
 - FluentValidation validators
 
-### WorkflowBridge.Infrastructure
+### RiskLensAI.Infrastructure
 
 Contains external systems and technical implementations.
 
@@ -74,7 +74,7 @@ Initial candidates:
 - simple policy retrieval implementation
 - Serilog/OpenTelemetry wiring
 
-### WorkflowBridge.Web
+### RiskLensAI.Web
 
 Contains the Blazor Server UI and app composition.
 

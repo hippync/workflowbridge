@@ -6,6 +6,8 @@ Ship one strong vertical slice before expanding the platform.
 
 The portfolio value comes from showing a complete, auditable AI workflow in .NET, not from adding every possible provider or cloud feature.
 
+The initial GitHub issue backlog is defined in [github-issues.md](github-issues.md).
+
 ## Phase 1 - Foundation
 
 Goal: the solution compiles, runs, and has the right structure.
@@ -130,10 +132,10 @@ Add local skills once the initial project structure is stable.
 
 Candidate skills:
 
-- `workflowbridge-architecture`: project boundaries, dependency rules, naming conventions.
-- `workflowbridge-ai-provider`: how to add AI providers, audit records, recorded responses, and provider tests.
-- `workflowbridge-blazor-ui`: UI conventions for internal credit analyst workflows.
-- `workflowbridge-docs`: documentation style, Mermaid diagrams, roadmap updates, and portfolio messaging.
+- `risklensai-architecture`: project boundaries, dependency rules, naming conventions.
+- `risklensai-ai-provider`: how to add AI providers, audit records, recorded responses, and provider tests.
+- `risklensai-blazor-ui`: UI conventions for internal credit analyst workflows.
+- `risklensai-docs`: documentation style, Mermaid diagrams, roadmap updates, and portfolio messaging.
 
 Skills should encode stable conventions, not temporary implementation ideas.
 

@@ -1,4 +1,4 @@
-# WorkflowBridge
+# RiskLensAI
 
 > AI-assisted credit risk workflow built with .NET, Blazor Server, auditable AI providers, document ingestion, and a portfolio-ready architecture.
 
@@ -6,7 +6,7 @@ Active planning phase. The previous Stripe/Notion/Slack automation scope has bee
 
 ## Product Intent
 
-WorkflowBridge demonstrates how to integrate AI into a .NET business application in a way that is controlled, testable, auditable, and explainable.
+RiskLensAI demonstrates how to integrate AI into a .NET business application in a way that is controlled, testable, auditable, and explainable.
 
 The v1 workflow focuses on one banking-style use case:
 
@@ -57,14 +57,14 @@ The v1 workflow focuses on one banking-style use case:
 
 ```text
 src/
-  WorkflowBridge.Domain
-  WorkflowBridge.Application
-  WorkflowBridge.Infrastructure
-  WorkflowBridge.Web
+  RiskLensAI.Domain
+  RiskLensAI.Application
+  RiskLensAI.Infrastructure
+  RiskLensAI.Web
 
 tests/
-  WorkflowBridge.Application.Tests
-  WorkflowBridge.Infrastructure.Tests
+  RiskLensAI.Application.Tests
+  RiskLensAI.Infrastructure.Tests
 ```
 
 See [docs/architecture.md](docs/architecture.md) for the current design plan.

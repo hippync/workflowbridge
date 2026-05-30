@@ -2,7 +2,7 @@
 
 ## Goal
 
-This document defines the technologies planned for WorkflowBridge v1.
+This document defines the technologies planned for RiskLensAI v1.
 
 The stack should support the main portfolio message: an enterprise-style .NET application that integrates AI in a controlled, testable, auditable way.
 
