@@ -1,7 +1,27 @@
-﻿@page "/"
+@page "/"
 
-<PageTitle>RiskLensAI</PageTitle>
+<PageTitle>Dashboard - RiskLensAI</PageTitle>
 
-<h1>RiskLensAI</h1>
+<div class="dashboard">
+    <div class="dashboard-header">
+        <h1>Dashboard</h1>
+        <p>Credit risk analysis workspace. Select a section to get started.</p>
+    </div>
 
-<p>Credit risk analysis workspace foundation.</p>
+    <div class="dashboard-cards">
+        <a href="/cases" class="dashboard-card">
+            <div class="card-title">Cases</div>
+            <div class="card-description">Create and manage credit risk cases.</div>
+        </a>
+
+        <a href="/analysis" class="dashboard-card">
+            <div class="card-title">Analysis</div>
+            <div class="card-description">Run AI-powered credit risk assessments.</div>
+        </a>
+
+        <a href="/audit" class="dashboard-card">
+            <div class="card-title">Audit</div>
+            <div class="card-description">Review AI provider call history and metadata.</div>
+        </a>
+    </div>
+</div>
