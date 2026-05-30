@@ -23,3 +23,61 @@ p {
     margin: 0;
     color: #475467;
 }
+
+/* Dashboard */
+.dashboard {
+    padding: 2rem;
+}
+
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.dashboard-card {
+    border: 1px solid #e4e7ec;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.dashboard-card:hover {
+    border-color: #195fa6;
+    box-shadow: 0 2px 8px rgba(25, 95, 166, 0.1);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #172033;
+}
+
+.card-description {
+    font-size: 0.875rem;
+    color: #475467;
+}
+
+/* Page shell */
+.page-header {
+    padding: 2rem 2rem 1.5rem;
+    border-bottom: 1px solid #e4e7ec;
+    margin-bottom: 1.5rem;
+}
+
+.placeholder-notice {
+    margin: 0 2rem;
+    padding: 1rem 1.25rem;
+    background: #f9fafb;
+    border: 1px solid #e4e7ec;
+    border-radius: 6px;
+    color: #475467;
+    font-size: 0.9rem;
+}
