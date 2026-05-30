@@ -1,46 +1,55 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-
-# Testing
-coverage/
-
-# Next.js
-.next/
+# Build output
+bin/
+obj/
 out/
+publish/
+artifacts/
 
-# Production
-build/
-dist/
+# Test output
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# .NET user files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+
+# Visual Studio
+.vs/
+
+# VS Code
+.vscode/
 
 # Environment
 .env
 .env.local
-.env.production
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
 
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# Logs
+logs/
+*.log
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# Local database and containers
+*.db
+*.db-shm
+*.db-wal
+.docker/
+
+# AI recordings may contain prompt/response data; commit curated samples only.
+recordings/
+!recordings/.gitkeep
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Vercel
-.vercel
-
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
+# Local SDK/cache folders
+.dotnet_home/
