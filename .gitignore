@@ -56,5 +56,4 @@ Thumbs.db
 .dotnet/
 .tools/
 
-#Claude agents
-.claude/
+
