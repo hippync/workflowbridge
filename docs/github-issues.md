@@ -29,6 +29,71 @@ Recommended labels:
 - `priority-medium`
 - `priority-low`
 
+## Current Kanban Snapshot
+
+Updated: 2026-05-31
+
+Source: live GitHub Project [risklensai](https://github.com/users/hippync/projects/11), reconciled against local repository state.
+
+### Done
+
+- #1 - Create .NET solution project structure
+- #2 - Add Blazor Server shell
+- #3 - Add health check and basic app configuration
+- #6 - Define AI request and response models
+- #7 - Create `IAiProvider` abstraction
+- #29 - Define agentic task template
+- #31 - Add build/test quality gates
+
+### Review
+
+- None
+
+### In Progress
+
+- None
+
+### Ready
+
+- #4 - Configure Serilog
+- #5 - Add local development identity
+- #8 - Implement `MockAiProvider`
+- #9 - Implement AI provider configuration
+- #10 - Design AI audit record model
+
+### Backlog
+
+- #11 - Implement basic audit logger
+- #12 - Implement `RecordedAiProvider`
+- #13 - Implement `AnthropicDirectAiProvider`
+- #14 - Add EF Core and PostgreSQL baseline
+- #15 - Create credit risk case model and use case
+- #16 - Build case creation UI
+- #17 - Add PDF parsing service
+- #18 - Add Excel parsing service
+- #19 - Build document upload flow
+- #20 - Add fictional credit policy corpus
+- #21 - Implement simple policy retrieval
+- #22 - Build structured credit risk assessment workflow
+- #23 - Build assessment result UI
+- #24 - Build audit history UI
+- #25 - Add core application tests
+- #26 - Add provider integration tests
+- #27 - Add Docker Compose for local PostgreSQL
+- #28 - Add Mermaid architecture diagrams
+- #30 - Define project skills plan
+- #32 - Prepare portfolio README and demo script
+
+### Epic Status
+
+| Epic | Status | Notes |
+|------|--------|-------|
+| EPIC 1 - Project Foundation | In Progress | Issues #1-#3 are implemented; #4 and #5 are ready next. |
+| EPIC 2 - AI Provider Integration | In Progress | Provider models and interface exist; implementation/config/audit work remains. |
+| EPIC 3 - Credit Risk Workflow | Backlog | Starts after the first provider/audit slice is stable. |
+| EPIC 4 - Audit, Testing, and Demo Readiness | Backlog | Quality-gate docs exist; audit UI/tests/demo work remain. |
+| EPIC 5 - Agentic Development Workflow | In Progress | Task template and quality-gate docs exist; skills plan remains. |
+
 ## Epics
 
 ### EPIC 1 - Project Foundation

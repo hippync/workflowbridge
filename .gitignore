@@ -54,6 +54,7 @@ Thumbs.db
 # Local SDK/cache folders
 .dotnet_home/
 .dotnet/
+.tools/
 
 #Claude agents
 .claude/
