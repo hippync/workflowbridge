@@ -114,6 +114,16 @@ http://localhost:5000/health
 
 It returns `Healthy` with HTTP 200 when the application is operational.
 
+## Agentic Development
+
+This repository is set up for AI-assisted development with Claude Code and Codex.
+
+- [docs/agentic-workflow.md](docs/agentic-workflow.md) — task format, agent rules, and workflow stages
+- [docs/quality-gates.md](docs/quality-gates.md) — verification commands every agent must run before reporting done
+- [CLAUDE.md](CLAUDE.md) — permanent architecture and agent behavior rules loaded by Claude Code automatically
+
+Use the [agent-ready issue template](.github/ISSUE_TEMPLATE/agent_ready_issue.md) when creating issues intended for agent execution.
+
 ## Delivery Plan
 
 The project should be delivered as a strict vertical slice before expanding provider or platform support.
